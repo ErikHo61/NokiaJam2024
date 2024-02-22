@@ -1,8 +1,8 @@
 shader_type canvas_item;
 
-//#define DISABLE_DOOR_EFFECT
-//#define DISABLE_PIXEL_GRAIN
-//#define DISABLE_PIXEL_SHADOWS
+#define DISABLE_DOOR_EFFECT
+#define DISABLE_PIXEL_GRAIN
+#define DISABLE_PIXEL_SHADOWS
 
 global uniform vec2 screen_resolution;
 global uniform vec4 color_palette_dark : source_color;
