@@ -5,6 +5,4 @@
 [resource]
 script = ExtResource("1_3yksg")
 title = "IceCream"
-type = null
-orders = null
-ingredients = [null]
+type = 0
