@@ -18,7 +18,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-MinigamConstants="*res://assets/GDResources/MinigameConstants.gd"
+MinigameConstants="*res://assets/GDResources/MinigameConstants.gd"
 
 [dotnet]
 
