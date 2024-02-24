@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_3yksg")
 title = "IceCream"
-type = 0
-orders = Array[Resource("res://assets/GDResources/OrderAttributes.gd")]([])
+type = null
+orders = null
 ingredients = [null]
