@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MinigameAttributes" load_steps=4 format=3 uid="uid://uphc4mk6nyqp"]
+
+[ext_resource type="Script" path="res://assets/GDResources/OrderAttributes.gd" id="1_8kc2y"]
+[ext_resource type="Script" path="res://assets/GDResources/MinigameAttributes.gd" id="1_yf1w2"]
+
+[sub_resource type="Resource" id="Resource_nw6l1"]
+script = ExtResource("1_8kc2y")
+orderName = ""
+ingredientList = ["VANILLA", "CHOCOLATE", "MINT", "COOKIE", "CARAMEL", "BLEND"]
+
+[resource]
+script = ExtResource("1_yf1w2")
+title = ""
+type = 0
+"Dessert Type" = "ICECREAMSHAKE"
+"Ingredient List" = ["VANILLA", "CHOCOLATE", "MINT", "COOKIE", "CARAMEL", "BLEND"]
+Orders = [SubResource("Resource_nw6l1")]

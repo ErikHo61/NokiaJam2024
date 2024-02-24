@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="MinigameAttributes" load_steps=2 format=3 uid="uid://cxpr13nuuq1hq"]
+
+[ext_resource type="Script" path="res://assets/GDResources/MinigameAttributes.gd" id="1_3yksg"]
+
+[resource]
+script = ExtResource("1_3yksg")
+title = "IceCream"
+type = null
+orders = null
+ingredients = [null]
