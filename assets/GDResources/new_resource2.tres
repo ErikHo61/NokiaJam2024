@@ -3,10 +3,13 @@
 [ext_resource type="Script" path="res://assets/GDResources/OrderAttributes.gd" id="1_kw4bi"]
 [ext_resource type="Script" path="res://assets/GDResources/MinigameAttributes.gd" id="1_ly60g"]
 
-[sub_resource type="Resource" id="Resource_x7qkw"]
+[sub_resource type="Resource" id="Resource_3aem7"]
 script = ExtResource("1_kw4bi")
-orderName = "Vanilla classic"
-ingredientList = ["CONE", "CUP", "VANILLA", "CHOCOLATE", "BERRY", "MATCHA"]
+orderName = ""
+OrderMatters = false
+"Dessert Type" = "ICECREAMSCOOP"
+"Add New Ingredient" = ["CONE", "CUP", "VANILLA", "CHOCOLATE", "BERRY", "MATCHA"]
+"Order Details" = ["CUP", "VANILLA", "CHOCOLATE", "CHOCOLATE"]
 
 [resource]
 script = ExtResource("1_ly60g")
@@ -14,4 +17,4 @@ title = ""
 type = 0
 "Dessert Type" = "ICECREAMSCOOP"
 "Ingredient List" = ["CONE", "CUP", "VANILLA", "CHOCOLATE", "BERRY", "MATCHA"]
-Orders = [SubResource("Resource_x7qkw")]
+Orders = [SubResource("Resource_3aem7")]

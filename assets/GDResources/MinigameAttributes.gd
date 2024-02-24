@@ -47,12 +47,13 @@ func _set(prop_name: StringName, val) -> bool:
 			CurDessertType = MinigameConstants.DessertType.get(val)
 			for i in OrderList.size():
 				OrderList[i].ingredientList = get_ingredients()
-				OrderList[i].DessertType = CurDessertType
+				OrderList[i].CurDessertType = MinigameConstants.DessertType.get(val)
 			notify_property_list_changed()
 		"Orders":
 			OrderList = val
 			for i in OrderList.size():
 				OrderList[i].ingredientList = get_ingredients()
+				OrderList[i].CurDessertType = CurDessertType
 			notify_property_list_changed()
 		_:
 			retval = false
