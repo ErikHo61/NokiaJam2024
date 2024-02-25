@@ -1,0 +1,92 @@
+[gd_resource type="Resource" script_class="MinigameAttributes" load_steps=13 format=3 uid="uid://csuy8i2oy7u7y"]
+
+[ext_resource type="Script" path="res://assets/GDResources/MinigameAttributes.gd" id="1_ccv1l"]
+[ext_resource type="Script" path="res://assets/GDResources/OrderAttributes.gd" id="1_qpduc"]
+
+[sub_resource type="Resource" id="Resource_ykn6d"]
+script = ExtResource("1_qpduc")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "CAKE"
+"Add New Ingredient" = ["VANILLA", "CHOCO", "CREAM", "FRUIT", "ICING"]
+"Order Details" = ["VANILLA", "CREAM", "VANILLA", "ICING"]
+
+[sub_resource type="Resource" id="Resource_jlxl8"]
+script = ExtResource("1_qpduc")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "CAKE"
+"Add New Ingredient" = ["VANILLA", "CHOCO", "CREAM", "FRUIT", "ICING"]
+"Order Details" = ["CHOCOLATE", "CREAM", "CHOCOLATE", "ICING"]
+
+[sub_resource type="Resource" id="Resource_dv7rv"]
+script = ExtResource("1_qpduc")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "CAKE"
+"Add New Ingredient" = ["VANILLA", "CHOCO", "CREAM", "FRUIT", "ICING"]
+"Order Details" = ["VANILLA", "CREAM", "CHOCOLATE", "ICING"]
+
+[sub_resource type="Resource" id="Resource_nps5y"]
+script = ExtResource("1_qpduc")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "CAKE"
+"Add New Ingredient" = ["VANILLA", "CHOCO", "CREAM", "FRUIT", "ICING"]
+"Order Details" = ["CHOCOLATE", "FRUIT", "VANILLA", "ICING"]
+
+[sub_resource type="Resource" id="Resource_ibb10"]
+script = ExtResource("1_qpduc")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "CAKE"
+"Add New Ingredient" = ["VANILLA", "CHOCO", "CREAM", "FRUIT", "ICING"]
+"Order Details" = ["VANILLA", "FRUIT", "VANILLA", "FRUIT"]
+
+[sub_resource type="Resource" id="Resource_l3isi"]
+script = ExtResource("1_qpduc")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "CAKE"
+"Add New Ingredient" = ["VANILLA", "CHOCO", "CREAM", "FRUIT", "ICING"]
+"Order Details" = ["CHOCOLATE", "CREAM", "CHOCOLATE", "FRUIT"]
+
+[sub_resource type="Resource" id="Resource_2a8kl"]
+script = ExtResource("1_qpduc")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "CAKE"
+"Add New Ingredient" = ["VANILLA", "CHOCO", "CREAM", "FRUIT", "ICING"]
+"Order Details" = ["VANILLA", "ICING"]
+
+[sub_resource type="Resource" id="Resource_645xo"]
+script = ExtResource("1_qpduc")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "CAKE"
+"Add New Ingredient" = ["VANILLA", "CHOCO", "CREAM", "FRUIT", "ICING"]
+"Order Details" = ["CHOCOLATE", "CHOCOLATE", "FRUIT"]
+
+[sub_resource type="Resource" id="Resource_4i8m5"]
+script = ExtResource("1_qpduc")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "CAKE"
+"Add New Ingredient" = ["VANILLA", "CHOCO", "CREAM", "FRUIT", "ICING"]
+"Order Details" = ["VANILLA", "ICING"]
+
+[sub_resource type="Resource" id="Resource_dm73i"]
+script = ExtResource("1_qpduc")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "CAKE"
+"Add New Ingredient" = ["VANILLA", "CHOCO", "CREAM", "FRUIT", "ICING"]
+"Order Details" = ["CHOCOLATE", "ICING", "FRUIT"]
+
+[resource]
+script = ExtResource("1_ccv1l")
+title = ""
+type = 0
+"Dessert Type" = "CAKE"
+"Ingredient List" = ["VANILLA", "CHOCO", "CREAM", "FRUIT", "ICING"]
+Orders = [SubResource("Resource_ykn6d"), SubResource("Resource_jlxl8"), SubResource("Resource_dv7rv"), SubResource("Resource_nps5y"), SubResource("Resource_ibb10"), SubResource("Resource_l3isi"), SubResource("Resource_2a8kl"), SubResource("Resource_645xo"), SubResource("Resource_4i8m5"), SubResource("Resource_dm73i")]

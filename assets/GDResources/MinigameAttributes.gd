@@ -71,8 +71,5 @@ func _get(prop_name: StringName):
 
 
 func get_ingredients():
-	if(CurDessertType == MinigameConstants.DessertType.ICECREAMSCOOP):
-		return MinigameConstants.IceCreamScoop.keys()
-	elif(CurDessertType == MinigameConstants.DessertType.ICECREAMSHAKE):
-		return MinigameConstants.IceCreamShake.keys()
-	return null
+	return MinigameConstants.DessertList[CurDessertType].keys()
+	

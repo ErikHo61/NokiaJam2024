@@ -1,0 +1,92 @@
+[gd_resource type="Resource" script_class="MinigameAttributes" load_steps=13 format=3 uid="uid://cyctgqbd8hvjl"]
+
+[ext_resource type="Script" path="res://assets/GDResources/MinigameAttributes.gd" id="1_0tpam"]
+[ext_resource type="Script" path="res://assets/GDResources/OrderAttributes.gd" id="1_3v1vr"]
+
+[sub_resource type="Resource" id="Resource_2hxod"]
+script = ExtResource("1_3v1vr")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "ICECREAMSCOOP"
+"Add New Ingredient" = ["CONE", "CUP", "VANILLA", "CHOCO", "BERRY", "MATCHA"]
+"Order Details" = ["CONE", "VANILLA", "CHOCOLATE", "BERRY"]
+
+[sub_resource type="Resource" id="Resource_eqdml"]
+script = ExtResource("1_3v1vr")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "ICECREAMSCOOP"
+"Add New Ingredient" = ["CONE", "CUP", "VANILLA", "CHOCO", "BERRY", "MATCHA"]
+"Order Details" = ["CONE", "VANILLA", "VANILLA", "VANILLA"]
+
+[sub_resource type="Resource" id="Resource_512br"]
+script = ExtResource("1_3v1vr")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "ICECREAMSCOOP"
+"Add New Ingredient" = ["CONE", "CUP", "VANILLA", "CHOCO", "BERRY", "MATCHA"]
+"Order Details" = ["CUP", "CHOCOLATE", "BERRY", "MATCHA"]
+
+[sub_resource type="Resource" id="Resource_yuwvf"]
+script = ExtResource("1_3v1vr")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "ICECREAMSCOOP"
+"Add New Ingredient" = ["CONE", "CUP", "VANILLA", "CHOCO", "BERRY", "MATCHA"]
+"Order Details" = ["CUP", "CHOCOLATE", "CHOCOLATE", "CHOCOLATE"]
+
+[sub_resource type="Resource" id="Resource_4rxy6"]
+script = ExtResource("1_3v1vr")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "ICECREAMSCOOP"
+"Add New Ingredient" = ["CONE", "CUP", "VANILLA", "CHOCO", "BERRY", "MATCHA"]
+"Order Details" = ["CONE", "VANILLA", "VANILLA", "VANILLA"]
+
+[sub_resource type="Resource" id="Resource_cysgo"]
+script = ExtResource("1_3v1vr")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "ICECREAMSCOOP"
+"Add New Ingredient" = ["CONE", "CUP", "VANILLA", "CHOCO", "BERRY", "MATCHA"]
+"Order Details" = ["CONE", "BERRY", "MATCHA", "BERRY"]
+
+[sub_resource type="Resource" id="Resource_cfx2l"]
+script = ExtResource("1_3v1vr")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "ICECREAMSCOOP"
+"Add New Ingredient" = ["CONE", "CUP", "VANILLA", "CHOCO", "BERRY", "MATCHA"]
+"Order Details" = ["CONE", "VANILLA"]
+
+[sub_resource type="Resource" id="Resource_ykyob"]
+script = ExtResource("1_3v1vr")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "ICECREAMSCOOP"
+"Add New Ingredient" = ["CONE", "CUP", "VANILLA", "CHOCO", "BERRY", "MATCHA"]
+"Order Details" = ["CONE", "CHOCOLATE", "CHOCOLATE"]
+
+[sub_resource type="Resource" id="Resource_1w0rl"]
+script = ExtResource("1_3v1vr")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "ICECREAMSCOOP"
+"Add New Ingredient" = ["CONE", "CUP", "VANILLA", "CHOCO", "BERRY", "MATCHA"]
+"Order Details" = ["CUP", "MATCHA", "VANILLA"]
+
+[sub_resource type="Resource" id="Resource_klynu"]
+script = ExtResource("1_3v1vr")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "ICECREAMSCOOP"
+"Add New Ingredient" = ["CONE", "CUP", "VANILLA", "CHOCO", "BERRY", "MATCHA"]
+"Order Details" = ["CUP", "CHOCOLATE"]
+
+[resource]
+script = ExtResource("1_0tpam")
+title = "IceCreamScoop"
+type = 0
+"Dessert Type" = "ICECREAMSCOOP"
+"Ingredient List" = ["CONE", "CUP", "VANILLA", "CHOCO", "BERRY", "MATCHA"]
+Orders = [SubResource("Resource_2hxod"), SubResource("Resource_eqdml"), SubResource("Resource_512br"), SubResource("Resource_yuwvf"), SubResource("Resource_4rxy6"), SubResource("Resource_cysgo"), SubResource("Resource_cfx2l"), SubResource("Resource_ykyob"), SubResource("Resource_1w0rl"), SubResource("Resource_klynu")]
