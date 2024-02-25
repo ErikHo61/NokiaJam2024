@@ -11,14 +11,14 @@ func _input(event):
 			child.text = "Start"
 			var child2 := $Exit as RichTextLabel
 			child2.text = ">Exit"
-			print("selector is %d", selector )
+			#print("selector is %d", selector )
 		else:
 			selector=0
 			var child := $Start as RichTextLabel
 			child.text = ">Start"
 			var child2 := $Exit as RichTextLabel
 			child2.text = "Exit"
-			print("selector is %d", selector )
+			#print("selector is %d", selector )
 		
 	if event.is_action_pressed("kp enter"): # enter
 			if selector==0:
