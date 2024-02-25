@@ -1,21 +1,21 @@
 extends Node
 
-enum DessertType {DEFAULT, ICECREAMSCOOP, ICECREAMSHAKE, CAKE, SHAVEDICE, SLUSHIE, POPSICLE, FROZENFRUIT}
+enum DessertType {DEFAULT, ICECREAMSCOOP, ICECREAMSHAKE, CAKE, BINGSOO, SLUSHIE, POPSICLE, FROZENFRUIT}
 
 enum Default {}
 
-enum IceCreamScoop {CONE, CUP, VANILLA, CHOCOLATE, BERRY, MATCHA}
+enum IceCreamScoop {CONE, CUP, VANILLA, CHOCO, BERRY, MATCHA}
 
-enum IceCreamShake {VANILLA, CHOCOLATE, MINT, COOKIE, CARAMEL, BLEND}
+enum IceCreamShake {VANILLA, CHOCO, MINT, COOKIE, CARAMEL, BLEND}
 
-enum Cake {VANILLA, CHOCOLATE, CREAM, FRUIT, ICING}
+enum Cake {VANILLA, CHOCO, CREAM, FRUIT, ICING}
 
-enum ShavedIce {F_MILK, F_WATER, FRUIT, CHOCOLATE, MATCHA, RBEAN}
+enum BingSoo {MILK, FRUIT, CHOCO, MATCHA, R_BEAN}
 
-enum Slushie {R_BEER, COLA, ORANGE, TOP, STRAW}
+enum Slushie {R_BEER, COLA, O_SODA, DEW, TOP, STRAW}
 
-enum Popsicle {}
+enum Popsicle {B_BERRY, GRAPE, MELON, APPLE, STICKS, FREEZE}
 
-enum FrozenFruit {}
+enum FrozenFruit {S_BERRY, GRAPE, MELON, BANANA, STICKS, DIP}
 
-const DessertList = [Default, IceCreamScoop, IceCreamShake, Cake, ShavedIce, Slushie, Popsicle, FrozenFruit]
+const DessertList = [Default, IceCreamScoop, IceCreamShake, Cake, BingSoo, Slushie, Popsicle, FrozenFruit]
