@@ -16,6 +16,6 @@ enum Slushie {R_BEER, COLA, O_SODA, DEW, TOP, STRAW}
 
 enum Popsicle {B_BERRY, GRAPE, MELON, APPLE, STICKS, FREEZE}
 
-enum FrozenFruit {S_BERRY, GRAPE, MELON, BANANA, STICKS, DIP}
+enum FrozenFruit {S_BERRY, GRAPE, MELON, BANANA, DIP}
 
 const DessertList = [Default, IceCreamScoop, IceCreamShake, Cake, BingSoo, Slushie, Popsicle, FrozenFruit]
