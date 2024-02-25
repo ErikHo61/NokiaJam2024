@@ -88,6 +88,8 @@ func initialize_minigame():
 	return output
 
 func _on_input_received(keycode):
+	if($OrderScreen.visible):
+		return
 	match keycode:
 		"7":
 			if($Minigames/MinigameSelection7/Input.text != ""):

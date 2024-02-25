@@ -54,7 +54,9 @@ func validation():
 	var targetScore = tempCurOrder.size()
 	if(CurOrder.OrderMatters):
 		for i in tempCurOrder.size():
-			if (CurOrderFilled[i] == tempCurOrder[i]):
+			if(i>=CurOrderFilled.size()):
+				tempScore -= 1
+			elif (CurOrderFilled[i] == tempCurOrder[i]):
 				tempScore += 1
 			else:
 				tempScore -= 1
@@ -72,6 +74,7 @@ func validation():
 #Make the order screen active and attach all labels
 func activate_minigame():
 	randomize_order()
+	CurOrderFilled.clear()
 	clear_fields()
 	fill_fields()
 	self.visible = true

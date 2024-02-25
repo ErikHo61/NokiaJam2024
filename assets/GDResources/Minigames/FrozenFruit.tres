@@ -1,0 +1,140 @@
+[gd_resource type="Resource" script_class="MinigameAttributes" load_steps=19 format=3 uid="uid://c5727puart41n"]
+
+[ext_resource type="Script" path="res://assets/GDResources/OrderAttributes.gd" id="1_4djmw"]
+[ext_resource type="Script" path="res://assets/GDResources/MinigameAttributes.gd" id="1_765lk"]
+
+[sub_resource type="Resource" id="Resource_3fdhu"]
+script = ExtResource("1_4djmw")
+orderName = ""
+OrderMatters = false
+"Dessert Type" = "FROZENFRUIT"
+"Add New Ingredient" = ["S_BERRY", "GRAPE", "MELON", "BANANA", "DIP"]
+"Order Details" = ["S_BERRY", "MELON", "BANANA", "DIP"]
+
+[sub_resource type="Resource" id="Resource_mqhc1"]
+script = ExtResource("1_4djmw")
+orderName = ""
+OrderMatters = false
+"Dessert Type" = "FROZENFRUIT"
+"Add New Ingredient" = ["S_BERRY", "GRAPE", "MELON", "BANANA", "DIP"]
+"Order Details" = ["S_BERRY", "MELON", "GRAPE", "BANANA"]
+
+[sub_resource type="Resource" id="Resource_kymhr"]
+script = ExtResource("1_4djmw")
+orderName = ""
+OrderMatters = false
+"Dessert Type" = "FROZENFRUIT"
+"Add New Ingredient" = ["S_BERRY", "GRAPE", "MELON", "BANANA", "DIP"]
+"Order Details" = ["BANANA", "GRAPE", "S_BERRY", "DIP"]
+
+[sub_resource type="Resource" id="Resource_qjv6j"]
+script = ExtResource("1_4djmw")
+orderName = ""
+OrderMatters = false
+"Dessert Type" = "FROZENFRUIT"
+"Add New Ingredient" = ["S_BERRY", "GRAPE", "MELON", "BANANA", "DIP"]
+"Order Details" = ["S_BERRY", "S_BERRY", "S_BERRY", "S_BERRY"]
+
+[sub_resource type="Resource" id="Resource_ad6fi"]
+script = ExtResource("1_4djmw")
+orderName = ""
+OrderMatters = false
+"Dessert Type" = "FROZENFRUIT"
+"Add New Ingredient" = ["S_BERRY", "GRAPE", "MELON", "BANANA", "DIP"]
+"Order Details" = ["MELON", "MELON", "GRAPE", "GRAPE"]
+
+[sub_resource type="Resource" id="Resource_27o6b"]
+script = ExtResource("1_4djmw")
+orderName = ""
+OrderMatters = false
+"Dessert Type" = "FROZENFRUIT"
+"Add New Ingredient" = ["S_BERRY", "GRAPE", "MELON", "BANANA", "DIP"]
+"Order Details" = ["GRAPE", "GRAPE", "S_BERRY", "S_BERRY"]
+
+[sub_resource type="Resource" id="Resource_7tvdm"]
+script = ExtResource("1_4djmw")
+orderName = ""
+OrderMatters = false
+"Dessert Type" = "FROZENFRUIT"
+"Add New Ingredient" = ["S_BERRY", "GRAPE", "MELON", "BANANA", "DIP"]
+"Order Details" = ["MELON", "BANANA", "DIP"]
+
+[sub_resource type="Resource" id="Resource_daa6j"]
+script = ExtResource("1_4djmw")
+orderName = ""
+OrderMatters = false
+"Dessert Type" = "FROZENFRUIT"
+"Add New Ingredient" = ["S_BERRY", "GRAPE", "MELON", "BANANA", "DIP"]
+"Order Details" = ["S_BERRY", "S_BERRY", "S_BERRY", "DIP"]
+
+[sub_resource type="Resource" id="Resource_30ta0"]
+script = ExtResource("1_4djmw")
+orderName = ""
+OrderMatters = false
+"Dessert Type" = "FROZENFRUIT"
+"Add New Ingredient" = ["S_BERRY", "GRAPE", "MELON", "BANANA", "DIP"]
+"Order Details" = ["BANANA", "DIP"]
+
+[sub_resource type="Resource" id="Resource_ikhsa"]
+script = ExtResource("1_4djmw")
+orderName = ""
+OrderMatters = false
+"Dessert Type" = "FROZENFRUIT"
+"Add New Ingredient" = ["S_BERRY", "GRAPE", "MELON", "BANANA", "DIP"]
+"Order Details" = ["BANANA"]
+
+[sub_resource type="Resource" id="Resource_5t2vx"]
+script = ExtResource("1_4djmw")
+orderName = ""
+OrderMatters = false
+"Dessert Type" = "FROZENFRUIT"
+"Add New Ingredient" = ["S_BERRY", "GRAPE", "MELON", "BANANA", "DIP"]
+"Order Details" = ["GRAPE", "MELON", "S_BERRY", "MELON"]
+
+[sub_resource type="Resource" id="Resource_o8jwp"]
+script = ExtResource("1_4djmw")
+orderName = ""
+OrderMatters = false
+"Dessert Type" = "FROZENFRUIT"
+"Add New Ingredient" = ["S_BERRY", "GRAPE", "MELON", "BANANA", "DIP"]
+"Order Details" = ["S_BERRY", "BANANA", "MELON", "DIP"]
+
+[sub_resource type="Resource" id="Resource_tx17p"]
+script = ExtResource("1_4djmw")
+orderName = ""
+OrderMatters = false
+"Dessert Type" = "FROZENFRUIT"
+"Add New Ingredient" = ["S_BERRY", "GRAPE", "MELON", "BANANA", "DIP"]
+"Order Details" = ["GRAPE", "S_BERRY"]
+
+[sub_resource type="Resource" id="Resource_qsv6v"]
+script = ExtResource("1_4djmw")
+orderName = ""
+OrderMatters = false
+"Dessert Type" = "FROZENFRUIT"
+"Add New Ingredient" = ["S_BERRY", "GRAPE", "MELON", "BANANA", "DIP"]
+"Order Details" = ["MELON", "MELON"]
+
+[sub_resource type="Resource" id="Resource_aikxs"]
+script = ExtResource("1_4djmw")
+orderName = ""
+OrderMatters = false
+"Dessert Type" = "FROZENFRUIT"
+"Add New Ingredient" = ["S_BERRY", "GRAPE", "MELON", "BANANA", "DIP"]
+"Order Details" = ["BANANA", "GRAPE", "DIP"]
+
+[sub_resource type="Resource" id="Resource_pp2uf"]
+script = ExtResource("1_4djmw")
+orderName = ""
+OrderMatters = false
+"Dessert Type" = "FROZENFRUIT"
+"Add New Ingredient" = ["S_BERRY", "GRAPE", "MELON", "BANANA", "DIP"]
+"Order Details" = ["GRAPE", "DIP"]
+
+[resource]
+script = ExtResource("1_765lk")
+title = "FrozenFruit"
+type = 0
+"Dessert Type" = "FROZENFRUIT"
+"Ingredient List" = ["S_BERRY", "GRAPE", "MELON", "BANANA", "DIP"]
+Orders = [SubResource("Resource_3fdhu"), SubResource("Resource_mqhc1"), SubResource("Resource_kymhr"), SubResource("Resource_qjv6j"), SubResource("Resource_ad6fi"), SubResource("Resource_27o6b"), SubResource("Resource_7tvdm"), SubResource("Resource_daa6j"), SubResource("Resource_30ta0"), SubResource("Resource_ikhsa"), SubResource("Resource_5t2vx"), SubResource("Resource_o8jwp"), SubResource("Resource_tx17p"), SubResource("Resource_qsv6v"), SubResource("Resource_aikxs"), SubResource("Resource_pp2uf")]
