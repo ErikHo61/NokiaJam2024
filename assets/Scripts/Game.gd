@@ -14,6 +14,12 @@ var CurMinigameHolder7
 var CurMinigameHolder4
 var CurMinigameHolder1
 
+var CurMinigameTimer7: Timer
+var CurMinigameTimer4: Timer
+var CurMinigameTimer1: Timer
+
+var TimerDifficulty = 6
+
 var score = 0
 
 # Called when the node enters the scene tree for the first time.
@@ -49,6 +55,12 @@ func _process(delta):
 			CurMinigameHolder1 = initialize_minigame()
 			$Minigames/MinigameSelection1/Input.text = CurMinigameHolder1.title
 		randomize_next_minigame_time()
+	
+	#if (CurMinigameTimer7.time_left > 0):
+		#$Minigames/MinigameSelection7/TimerLabel.text = timer_label_parsing(CurMinigameTimer7)
+
+func timer_label_parsing(input):
+	return "!!" if input.time_left > TimerDifficulty / 2 else "!!!"
 
 func randomize_next_minigame_time():
 	last_recorded_time = timer.time_left

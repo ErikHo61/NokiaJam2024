@@ -57,8 +57,8 @@ autowrap_mode = 0
 
 [node name="Input" type="RichTextLabel" parent="Minigames/MinigameSelection7"]
 layout_mode = 2
-offset_left = 17.0
-offset_right = 21.0
+offset_left = 12.0
+offset_right = 16.0
 offset_bottom = 10.0
 theme_override_fonts/normal_font = ExtResource("1_v7gsg")
 fit_content = true
@@ -92,8 +92,8 @@ autowrap_mode = 0
 
 [node name="Input" type="RichTextLabel" parent="Minigames/MinigameSelection4"]
 layout_mode = 2
-offset_left = 17.0
-offset_right = 21.0
+offset_left = 12.0
+offset_right = 16.0
 offset_bottom = 10.0
 theme_override_fonts/normal_font = ExtResource("1_v7gsg")
 fit_content = true
@@ -127,8 +127,8 @@ autowrap_mode = 0
 
 [node name="Input" type="RichTextLabel" parent="Minigames/MinigameSelection1"]
 layout_mode = 2
-offset_left = 17.0
-offset_right = 21.0
+offset_left = 12.0
+offset_right = 16.0
 offset_bottom = 10.0
 theme_override_fonts/normal_font = ExtResource("1_v7gsg")
 fit_content = true
