@@ -1,0 +1,84 @@
+[gd_resource type="Resource" script_class="MinigameAttributes" load_steps=12 format=3 uid="uid://cl4rfrlwkklpx"]
+
+[ext_resource type="Script" path="res://assets/GDResources/OrderAttributes.gd" id="1_bd2lr"]
+[ext_resource type="Script" path="res://assets/GDResources/MinigameAttributes.gd" id="2_751rr"]
+
+[sub_resource type="Resource" id="Resource_tfal4"]
+script = ExtResource("1_bd2lr")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "POPSICLE"
+"Add New Ingredient" = ["B_BERRY", "GRAPE", "MELON", "APPLE", "STICKS", "FREEZE"]
+"Order Details" = ["B_BERRY", "MELON", "STICKS", "FREEZE"]
+
+[sub_resource type="Resource" id="Resource_nf2bx"]
+script = ExtResource("1_bd2lr")
+orderName = ""
+OrderMatters = false
+"Dessert Type" = "POPSICLE"
+"Add New Ingredient" = ["B_BERRY", "GRAPE", "MELON", "APPLE", "STICKS", "FREEZE"]
+"Order Details" = ["GRAPE", "MELON", "STICKS", "FREEZE"]
+
+[sub_resource type="Resource" id="Resource_prngm"]
+script = ExtResource("1_bd2lr")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "POPSICLE"
+"Add New Ingredient" = ["B_BERRY", "GRAPE", "MELON", "APPLE", "STICKS", "FREEZE"]
+"Order Details" = ["APPLE", "APPLE", "STICKS", "FREEZE"]
+
+[sub_resource type="Resource" id="Resource_4ojrg"]
+script = ExtResource("1_bd2lr")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "POPSICLE"
+"Add New Ingredient" = ["B_BERRY", "GRAPE", "MELON", "APPLE", "STICKS", "FREEZE"]
+"Order Details" = ["MELON", "B_BERRY", "STICKS", "FREEZE"]
+
+[sub_resource type="Resource" id="Resource_yvakq"]
+script = ExtResource("1_bd2lr")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "POPSICLE"
+"Add New Ingredient" = ["B_BERRY", "GRAPE", "MELON", "APPLE", "STICKS", "FREEZE"]
+"Order Details" = ["B_BERRY", "B_BERRY", "STICKS", "FREEZE"]
+
+[sub_resource type="Resource" id="Resource_4odi4"]
+script = ExtResource("1_bd2lr")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "POPSICLE"
+"Add New Ingredient" = ["B_BERRY", "GRAPE", "MELON", "APPLE", "STICKS", "FREEZE"]
+"Order Details" = ["GRAPE", "APPLE", "STICKS", "FREEZE"]
+
+[sub_resource type="Resource" id="Resource_fw5pe"]
+script = ExtResource("1_bd2lr")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "POPSICLE"
+"Add New Ingredient" = ["B_BERRY", "GRAPE", "MELON", "APPLE", "STICKS", "FREEZE"]
+"Order Details" = ["GRAPE", "B_BERRY", "STICKS", "FREEZE"]
+
+[sub_resource type="Resource" id="Resource_58dhx"]
+script = ExtResource("1_bd2lr")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "POPSICLE"
+"Add New Ingredient" = ["B_BERRY", "GRAPE", "MELON", "APPLE", "STICKS", "FREEZE"]
+"Order Details" = ["APPLE", "MELON", "STICKS", "FREEZE"]
+
+[sub_resource type="Resource" id="Resource_jnkw7"]
+script = ExtResource("1_bd2lr")
+orderName = ""
+OrderMatters = true
+"Dessert Type" = "POPSICLE"
+"Add New Ingredient" = ["B_BERRY", "GRAPE", "MELON", "APPLE", "STICKS", "FREEZE"]
+"Order Details" = ["MELON", "APPLE", "STICKS", "FREEZE"]
+
+[resource]
+script = ExtResource("2_751rr")
+title = "Popsicle"
+type = 0
+"Dessert Type" = "POPSICLE"
+"Ingredient List" = ["B_BERRY", "GRAPE", "MELON", "APPLE", "STICKS", "FREEZE"]
+Orders = [SubResource("Resource_tfal4"), SubResource("Resource_nf2bx"), SubResource("Resource_prngm"), SubResource("Resource_4ojrg"), SubResource("Resource_yvakq"), SubResource("Resource_4odi4"), SubResource("Resource_fw5pe"), SubResource("Resource_58dhx"), SubResource("Resource_jnkw7")]
