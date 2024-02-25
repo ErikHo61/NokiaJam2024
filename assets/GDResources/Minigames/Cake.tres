@@ -85,7 +85,7 @@ OrderMatters = true
 
 [resource]
 script = ExtResource("1_ccv1l")
-title = ""
+title = "Cake"
 type = 0
 "Dessert Type" = "CAKE"
 "Ingredient List" = ["VANILLA", "CHOCO", "CREAM", "FRUIT", "ICING"]
