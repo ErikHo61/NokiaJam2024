@@ -10,9 +10,15 @@ var CurOrder
 
 var CurOrderFilled = []
 
+var blips = []
+
 signal ScoreReturn(score)
 
 func _ready():
+	blips.append(load("res://assets/sfx/blip1.wav"))
+	blips.append(load("res://assets/sfx/blip5.wav"))
+	blips.append(load("res://assets/sfx/blip7.wav"))
+	blips.append(load("res://assets/sfx/blip9.wav"))
 	pass
 
 func _process(delta):
@@ -29,6 +35,7 @@ func _on_input_received(keycode):
 		return
 	if(has_node("BottomPanel/HBoxContainer"+keycode)):
 		add_ingredient(get_node("BottomPanel/HBoxContainer"+keycode+"/Input").text, keycode)
+		play_random_blip()
 		return
 	match keycode:
 		"#":
@@ -58,6 +65,8 @@ func validation():
 				tempCurOrder.erase(CurOrderFilled[i])
 				tempScore += 1
 		tempScore -= tempCurOrder.size()
+		
+	
 	return tempScore
 
 #Make the order screen active and attach all labels
@@ -78,6 +87,26 @@ func clear_fields():
 	for i in $BottomPanel.get_children():
 		i.get_node("Input").text = ""
 	$Instructions.text = ""
+
+func play_random_blip():
+	var audioplayer := $"../AudioPlayer" as AudioStreamPlayer2D
+	if(audioplayer.is_playing()):
+		audioplayer.stop()
+			
+	audioplayer.stream = blips.pick_random()
+	audioplayer.play()
+
+func play_result_sfx(score, targetScore):
+	var audioplayer := $"../AudioPlayer" as AudioStreamPlayer2D
+	if(audioplayer.is_playing()):
+		audioplayer.stop()	
+	if(score < targetScore):
+		
+		audioplayer.stream = load("res://assets/sfx/good2.wav")
+	else:
+		audioplayer.stream = load("res://assets/sfx/good1.wav")
+	audioplayer.play()
+		
 
 func deactivate_minigame():
 	self.visible = false

@@ -66,6 +66,7 @@ func connect_input():
 func _update_score(input):
 	score += input
 	$ScoreVal.text = str(score)
+	$ScoreChangeText.text = "+" + str(input)
 
 func preload_minigames():
 	load("res://assets/GDResources/Minigames/IceCreamScoop.tres")

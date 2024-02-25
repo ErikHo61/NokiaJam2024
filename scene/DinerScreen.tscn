@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://cg4m2snujl2t2"]
+[gd_scene load_steps=7 format=3 uid="uid://cg4m2snujl2t2"]
 
 [ext_resource type="Script" path="res://assets/Scripts/Game.gd" id="1_tyysg"]
 [ext_resource type="FontFile" uid="uid://cxeg4c7rwp2y3" path="res://assets/fonts/lowrez/lowrez.png" id="1_v7gsg"]
 [ext_resource type="Texture2D" uid="uid://016ob5bck0ku" path="res://assets/Sprites/FrontPerson.png" id="2_rlr4q"]
 [ext_resource type="Script" path="res://assets/Scripts/InputScript.gd" id="4_dt4a0"]
 [ext_resource type="PackedScene" uid="uid://dcoudhyv37usn" path="res://scene/OrderScreen.tscn" id="5_yuxce"]
+[ext_resource type="AudioStream" uid="uid://bjunaw2rf13vf" path="res://assets/sfx/blip1.wav" id="6_hp8wo"]
 
 [node name="Diner" type="Node2D"]
 script = ExtResource("1_tyysg")
@@ -188,5 +189,8 @@ script = ExtResource("4_dt4a0")
 
 [node name="OrderScreen" parent="." instance=ExtResource("5_yuxce")]
 visible = false
+
+[node name="AudioPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_hp8wo")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
