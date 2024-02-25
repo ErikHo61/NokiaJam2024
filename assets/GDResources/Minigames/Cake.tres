@@ -17,7 +17,7 @@ orderName = ""
 OrderMatters = true
 "Dessert Type" = "CAKE"
 "Add New Ingredient" = ["VANILLA", "CHOCO", "CREAM", "FRUIT", "ICING"]
-"Order Details" = ["CHOCOLATE", "CREAM", "CHOCOLATE", "ICING"]
+"Order Details" = ["CHOCO", "CREAM", "CHOCO", "ICING"]
 
 [sub_resource type="Resource" id="Resource_dv7rv"]
 script = ExtResource("1_qpduc")
@@ -25,7 +25,7 @@ orderName = ""
 OrderMatters = true
 "Dessert Type" = "CAKE"
 "Add New Ingredient" = ["VANILLA", "CHOCO", "CREAM", "FRUIT", "ICING"]
-"Order Details" = ["VANILLA", "CREAM", "CHOCOLATE", "ICING"]
+"Order Details" = ["VANILLA", "CREAM", "CHOCO", "ICING"]
 
 [sub_resource type="Resource" id="Resource_nps5y"]
 script = ExtResource("1_qpduc")
@@ -33,7 +33,7 @@ orderName = ""
 OrderMatters = true
 "Dessert Type" = "CAKE"
 "Add New Ingredient" = ["VANILLA", "CHOCO", "CREAM", "FRUIT", "ICING"]
-"Order Details" = ["CHOCOLATE", "FRUIT", "VANILLA", "ICING"]
+"Order Details" = ["CHOCO", "FRUIT", "VANILLA", "ICING"]
 
 [sub_resource type="Resource" id="Resource_ibb10"]
 script = ExtResource("1_qpduc")
@@ -49,7 +49,7 @@ orderName = ""
 OrderMatters = true
 "Dessert Type" = "CAKE"
 "Add New Ingredient" = ["VANILLA", "CHOCO", "CREAM", "FRUIT", "ICING"]
-"Order Details" = ["CHOCOLATE", "CREAM", "CHOCOLATE", "FRUIT"]
+"Order Details" = ["CHOCO", "CREAM", "CHOCO", "FRUIT"]
 
 [sub_resource type="Resource" id="Resource_2a8kl"]
 script = ExtResource("1_qpduc")
@@ -65,7 +65,7 @@ orderName = ""
 OrderMatters = true
 "Dessert Type" = "CAKE"
 "Add New Ingredient" = ["VANILLA", "CHOCO", "CREAM", "FRUIT", "ICING"]
-"Order Details" = ["CHOCOLATE", "CHOCOLATE", "FRUIT"]
+"Order Details" = ["CHOCO", "CHOCO", "FRUIT"]
 
 [sub_resource type="Resource" id="Resource_4i8m5"]
 script = ExtResource("1_qpduc")
@@ -81,7 +81,7 @@ orderName = ""
 OrderMatters = true
 "Dessert Type" = "CAKE"
 "Add New Ingredient" = ["VANILLA", "CHOCO", "CREAM", "FRUIT", "ICING"]
-"Order Details" = ["CHOCOLATE", "ICING", "FRUIT"]
+"Order Details" = ["CHOCO", "ICING", "FRUIT"]
 
 [resource]
 script = ExtResource("1_ccv1l")

@@ -14,7 +14,7 @@ OrderMatters = true
 [sub_resource type="Resource" id="Resource_nf2bx"]
 script = ExtResource("1_bd2lr")
 orderName = ""
-OrderMatters = false
+OrderMatters = true
 "Dessert Type" = "POPSICLE"
 "Add New Ingredient" = ["B_BERRY", "GRAPE", "MELON", "APPLE", "STICKS", "FREEZE"]
 "Order Details" = ["GRAPE", "MELON", "STICKS", "FREEZE"]

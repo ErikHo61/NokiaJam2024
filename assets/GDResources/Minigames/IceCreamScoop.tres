@@ -9,7 +9,7 @@ orderName = ""
 OrderMatters = true
 "Dessert Type" = "ICECREAMSCOOP"
 "Add New Ingredient" = ["CONE", "CUP", "VANILLA", "CHOCO", "BERRY", "MATCHA"]
-"Order Details" = ["CONE", "VANILLA", "CHOCOLATE", "BERRY"]
+"Order Details" = ["CONE", "VANILLA", "CHOCO", "BERRY"]
 
 [sub_resource type="Resource" id="Resource_eqdml"]
 script = ExtResource("1_3v1vr")
@@ -25,7 +25,7 @@ orderName = ""
 OrderMatters = true
 "Dessert Type" = "ICECREAMSCOOP"
 "Add New Ingredient" = ["CONE", "CUP", "VANILLA", "CHOCO", "BERRY", "MATCHA"]
-"Order Details" = ["CUP", "CHOCOLATE", "BERRY", "MATCHA"]
+"Order Details" = ["CUP", "CHOCO", "BERRY", "MATCHA"]
 
 [sub_resource type="Resource" id="Resource_yuwvf"]
 script = ExtResource("1_3v1vr")
@@ -33,7 +33,7 @@ orderName = ""
 OrderMatters = true
 "Dessert Type" = "ICECREAMSCOOP"
 "Add New Ingredient" = ["CONE", "CUP", "VANILLA", "CHOCO", "BERRY", "MATCHA"]
-"Order Details" = ["CUP", "CHOCOLATE", "CHOCOLATE", "CHOCOLATE"]
+"Order Details" = ["CUP", "CHOCO", "CHOCO", "CHOCO"]
 
 [sub_resource type="Resource" id="Resource_4rxy6"]
 script = ExtResource("1_3v1vr")
@@ -65,7 +65,7 @@ orderName = ""
 OrderMatters = true
 "Dessert Type" = "ICECREAMSCOOP"
 "Add New Ingredient" = ["CONE", "CUP", "VANILLA", "CHOCO", "BERRY", "MATCHA"]
-"Order Details" = ["CONE", "CHOCOLATE", "CHOCOLATE"]
+"Order Details" = ["CONE", "CHOCO", "CHOCO"]
 
 [sub_resource type="Resource" id="Resource_1w0rl"]
 script = ExtResource("1_3v1vr")
@@ -81,7 +81,7 @@ orderName = ""
 OrderMatters = true
 "Dessert Type" = "ICECREAMSCOOP"
 "Add New Ingredient" = ["CONE", "CUP", "VANILLA", "CHOCO", "BERRY", "MATCHA"]
-"Order Details" = ["CUP", "CHOCOLATE"]
+"Order Details" = ["CUP", "CHOCO"]
 
 [resource]
 script = ExtResource("1_0tpam")
