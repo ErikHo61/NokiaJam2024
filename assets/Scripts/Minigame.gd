@@ -32,7 +32,9 @@ func _on_input_received(keycode):
 		return
 	if(has_node("BottomPanel/HBoxContainer"+keycode)):
 		add_ingredient(get_node("BottomPanel/HBoxContainer"+keycode+"/Input").text, keycode)
-		#play_random_blip()
+		if($FoodSprite.get_frame() < $FoodSprite.get_sprite_frames().get_frame_count($FoodSprite.animation)-1):
+			$FoodSprite.set_frame($FoodSprite.get_frame() + 1)
+		play_random_blip()
 		return
 	match keycode:
 		"#":
@@ -88,7 +90,7 @@ func clear_fields():
 	$Instructions.text = ""
 
 func play_random_blip():
-	var audioplayer := $"../AudioPlayer" as AudioStreamPlayer2D
+	var audioplayer := $"../AudioPlayer" as AudioStreamPlayer
 	if(audioplayer.is_playing()):
 		audioplayer.stop()
 			
@@ -96,7 +98,7 @@ func play_random_blip():
 	audioplayer.play()
 
 func play_result_sfx(score, targetScore):
-	var audioplayer := $"../AudioPlayer" as AudioStreamPlayer2D
+	var audioplayer := $"../AudioPlayer" as AudioStreamPlayer
 	if(audioplayer.is_playing()):
 		audioplayer.stop()	
 	if(score < targetScore):

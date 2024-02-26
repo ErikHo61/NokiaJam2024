@@ -18,13 +18,13 @@ var CurMinigameTimer7: Timer
 var CurMinigameTimer4: Timer
 var CurMinigameTimer1: Timer
 
-var TimerDifficulty = 12
+var TimerDifficulty = 16
 
 var score = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	#load("res://assets/sfx/ring1.wav")
+	#$AudioPlayer.stream = load("res://assets/sfx/ring1.wav")
 	preload_minigames()
 	input = get_node("Input")
 	connect_input()
@@ -72,11 +72,7 @@ func _process(delta):
 			$Minigames/MinigameSelection1/TimerLabel.text = "!"
 			$Minigames/MinigameSelection1/Timer.wait_time = TimerDifficulty
 			CurMinigameTimer1.start()
-			#if($AudioPlayer.is_playing()):
-			#$AudioPlayer.stop()	
-			#print("thing")
-			#$AudioPlayer.stream = load("res://assets/sfx/ring1.wav")
-			#$AudioPlayer.play()
+		
 		randomize_next_minigame_time()
 	
 	if (!CurMinigameTimer7.is_stopped()):
@@ -128,7 +124,7 @@ func timer_label_parsing(input):
 
 func randomize_next_minigame_time():
 	last_recorded_time = timer.time_left
-	time_to_wait = randf_range(3,5)
+	time_to_wait = randf_range(5, 8)
 
 func _on_timer_timeout():
 	game_over()
@@ -159,17 +155,16 @@ func initialize_minigame():
 	match num:
 		0:
 			output = load("res://assets/GDResources/Minigames/IceCreamScoop.tres")
-			#$FoodSprite.set_animation("IceCream")
 		1:
 			output = load("res://assets/GDResources/Minigames/Cake.tres")
-			#$FoodSprite.set_animation("Cake")
 		2:
 			output = load("res://assets/GDResources/Minigames/Popsicle.tres")
-			#$FoodSprite.set_animation("Popsicle")
 		3:
 			output = load("res://assets/GDResources/Minigames/FrozenFruit.tres")
-			#$FoodSprite.set_animation("FrozenFruit")
-	
+	if($AudioPlayer.is_playing()):
+			$AudioPlayer.stop()
+	$AudioPlayer.stream = load("res://assets/sfx/blip2.wav")
+	$AudioPlayer.play()
 	return output
 
 func _on_input_received(keycode):
@@ -178,16 +173,20 @@ func _on_input_received(keycode):
 	match keycode:
 		"7":
 			if($Minigames/MinigameSelection7/Input.text != ""):
+				$OrderScreen/FoodSprite.set_animation($Minigames/MinigameSelection7/Input.text)
 				CurMinigame.CurMinigameAttribute = CurMinigameHolder7
 				CurMinigame.activate_minigame()
 				select_minigame7()
 		"4":
 			if($Minigames/MinigameSelection4/Input.text != ""):
+				$OrderScreen/FoodSprite.set_animation($Minigames/MinigameSelection4/Input.text)
 				CurMinigame.CurMinigameAttribute = CurMinigameHolder4
 				CurMinigame.activate_minigame()
 				select_minigame4()
 		"1":
 			if($Minigames/MinigameSelection1/Input.text != ""):
+				$OrderScreen/FoodSprite.set_animation($Minigames/MinigameSelection1/Input.text)
 				CurMinigame.CurMinigameAttribute = CurMinigameHolder1
 				CurMinigame.activate_minigame()
 				select_minigame1()
+

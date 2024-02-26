@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dcoudhyv37usn"]
+[gd_scene load_steps=5 format=3 uid="uid://dcoudhyv37usn"]
 
 [ext_resource type="FontFile" uid="uid://cxeg4c7rwp2y3" path="res://assets/fonts/lowrez/lowrez.png" id="1_b1rls"]
 [ext_resource type="Script" path="res://assets/Scripts/Minigame.gd" id="1_cic5e"]
 [ext_resource type="Texture2D" uid="uid://cah2jl8dyfh5j" path="res://assets/Sprites/IceCream4.png" id="2_wkx0y"]
+[ext_resource type="SpriteFrames" uid="uid://cqmhrrd462lk5" path="res://assets/GDResources/FoodSpriteFrames.tres" id="4_02wd3"]
 
 [node name="OrderScreen" type="Node2D"]
 script = ExtResource("1_cic5e")
@@ -195,6 +196,7 @@ text = "Vanilla"
 fit_content = true
 
 [node name="Food" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(34, 14)
 texture = ExtResource("2_wkx0y")
 
@@ -343,3 +345,8 @@ offset_bottom = 30.0
 theme_override_fonts/normal_font = ExtResource("1_b1rls")
 text = "#>"
 autowrap_mode = 0
+
+[node name="FoodSprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(34, 14)
+sprite_frames = ExtResource("4_02wd3")
+animation = &"Popsicle"

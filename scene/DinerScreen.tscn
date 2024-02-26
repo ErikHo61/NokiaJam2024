@@ -228,6 +228,8 @@ visible = false
 [node name="GameOver" parent="." instance=ExtResource("6_jjhdt")]
 visible = false
 
+[node name="AudioPlayer" type="AudioStreamPlayer" parent="."]
+
 [connection signal="timeout" from="Minigames/MinigameSelection7/Timer" to="." method="_on_timer7_timeout"]
 [connection signal="timeout" from="Minigames/MinigameSelection4/Timer" to="." method="_on_timer4_timeout"]
 [connection signal="timeout" from="Minigames/MinigameSelection1/Timer" to="." method="_on_timer1_timeout"]
