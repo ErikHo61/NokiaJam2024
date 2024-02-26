@@ -69,14 +69,14 @@ func _process(delta):
 		elif($Minigames/MinigameSelection1/Input.text == ""):
 			CurMinigameHolder1 = initialize_minigame()
 			$Minigames/MinigameSelection1/Input.text = CurMinigameHolder1.title	
-		#if($AudioPlayer.is_playing()):
-			#$AudioPlayer.stop()	
-		#print("thing")
-		#$AudioPlayer.stream = load("res://assets/sfx/ring1.wav")
-		#$AudioPlayer.play()
 			$Minigames/MinigameSelection1/TimerLabel.text = "!"
 			$Minigames/MinigameSelection1/Timer.wait_time = TimerDifficulty
 			CurMinigameTimer1.start()
+			#if($AudioPlayer.is_playing()):
+			#$AudioPlayer.stop()	
+			#print("thing")
+			#$AudioPlayer.stream = load("res://assets/sfx/ring1.wav")
+			#$AudioPlayer.play()
 		randomize_next_minigame_time()
 	
 	if (!CurMinigameTimer7.is_stopped()):
