@@ -24,6 +24,7 @@ var score = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	#load("res://assets/sfx/ring1.wav")
 	preload_minigames()
 	input = get_node("Input")
 	connect_input()
@@ -67,10 +68,15 @@ func _process(delta):
 			CurMinigameTimer4.start()
 		elif($Minigames/MinigameSelection1/Input.text == ""):
 			CurMinigameHolder1 = initialize_minigame()
-			$Minigames/MinigameSelection1/Input.text = CurMinigameHolder1.title
+			$Minigames/MinigameSelection1/Input.text = CurMinigameHolder1.title	
 			$Minigames/MinigameSelection1/TimerLabel.text = "!"
 			$Minigames/MinigameSelection1/Timer.wait_time = TimerDifficulty
 			CurMinigameTimer1.start()
+			#if($AudioPlayer.is_playing()):
+			#$AudioPlayer.stop()	
+			#print("thing")
+			#$AudioPlayer.stream = load("res://assets/sfx/ring1.wav")
+			#$AudioPlayer.play()
 		randomize_next_minigame_time()
 	
 	if (!CurMinigameTimer7.is_stopped()):
@@ -140,24 +146,33 @@ func connect_input():
 func _update_score(input):
 	score += input
 	$ScoreVal.text = str(score)
+	$ScoreChangeText.text = "+" + str(input)
 
 func preload_minigames():
 	load("res://assets/GDResources/Minigames/IceCreamScoop.tres")
 	load("res://assets/GDResources/Minigames/Cake.tres")
 	load("res://assets/GDResources/Minigames/Popsicle.tres")
+	load("res://assets/GDResources/Minigames/FrozenFruit.tres")
 
 func initialize_minigame():
 	var output
 	var rng = RandomNumberGenerator.new()
 	rng.randomize()
-	var num = rng.randi_range(0, 2)
+	var num = rng.randi_range(0, 3)
 	match num:
 		0:
 			output = load("res://assets/GDResources/Minigames/IceCreamScoop.tres")
+			#$FoodSprite.set_animation("IceCream")
 		1:
 			output = load("res://assets/GDResources/Minigames/Cake.tres")
+			#$FoodSprite.set_animation("Cake")
 		2:
 			output = load("res://assets/GDResources/Minigames/Popsicle.tres")
+			#$FoodSprite.set_animation("Popsicle")
+		3:
+			output = load("res://assets/GDResources/Minigames/FrozenFruit.tres")
+			#$FoodSprite.set_animation("FrozenFruit")
+	
 	return output
 
 func _on_input_received(keycode):

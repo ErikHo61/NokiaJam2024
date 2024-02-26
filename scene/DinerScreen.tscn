@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://016ob5bck0ku" path="res://assets/Sprites/FrontPerson.png" id="2_rlr4q"]
 [ext_resource type="Script" path="res://assets/Scripts/InputScript.gd" id="4_dt4a0"]
 [ext_resource type="PackedScene" uid="uid://dcoudhyv37usn" path="res://scene/OrderScreen.tscn" id="5_yuxce"]
-[ext_resource type="PackedScene" uid="uid://315yi6u4i8rj" path="res://scene/GameOver.tscn" id="6_jjhdt"]
+[ext_resource type="PackedScene" uid="uid://ddrjyk5ucwmot" path="res://scene/GameOver.tscn" id="6_jjhdt"]
 
 [node name="Diner" type="Node2D"]
 script = ExtResource("1_tyysg")
@@ -211,12 +211,11 @@ offset_right = 85.0
 offset_bottom = 11.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("1_v7gsg")
-text = "+1"
 fit_content = true
 autowrap_mode = 0
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 3.0
+wait_time = 120.0
 one_shot = true
 autostart = true
 
