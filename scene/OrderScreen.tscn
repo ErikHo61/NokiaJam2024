@@ -282,6 +282,7 @@ fit_content = true
 autowrap_mode = 0
 
 [node name="ColorRect" type="ColorRect" parent="Orders"]
+layout_mode = 0
 offset_top = 4.0
 offset_right = 13.0
 offset_bottom = 26.0

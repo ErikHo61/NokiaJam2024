@@ -128,7 +128,8 @@ func _on_timer_timeout():
 	game_over()
 
 func game_over():
-	pass
+	$GameOver.visible = true
+	$GameOver/ScoreVal.text = str(score)
 
 func connect_input():
 	input.input.connect(_on_input_received)
