@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=19 format=3 uid="uid://cqmhrrd462lk5"]
+[gd_resource type="SpriteFrames" load_steps=20 format=3 uid="uid://cqmhrrd462lk5"]
 
 [ext_resource type="Texture2D" uid="uid://ckxb3yqwapvrr" path="res://assets/Sprites/Cake1.png" id="1_8vd87"]
 [ext_resource type="Texture2D" uid="uid://uti2uynj5xqi" path="res://assets/Sprites/Cake2.png" id="2_t7qlt"]
@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://bj28x8jfpwqat" path="res://assets/Sprites/IceCream3.png" id="14_dscjd"]
 [ext_resource type="Texture2D" uid="uid://cah2jl8dyfh5j" path="res://assets/Sprites/IceCream4.png" id="15_46omc"]
 [ext_resource type="Texture2D" uid="uid://dti77c0wtyq4j" path="res://assets/Sprites/Popsicle1.png" id="16_ebkmj"]
+[ext_resource type="Texture2D" uid="uid://dbyhh8dpti0ho" path="res://assets/Sprites/Popsicle3.png" id="17_vdj1m"]
 [ext_resource type="Texture2D" uid="uid://bvdg1jtrns7t7" path="res://assets/Sprites/Popsicle5.png" id="17_xciqe"]
 [ext_resource type="Texture2D" uid="uid://cq4265rkrjeu4" path="res://assets/Sprites/Popsicle6.png" id="18_glstb"]
 
@@ -84,6 +85,9 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("16_ebkmj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_vdj1m")
 }, {
 "duration": 1.0,
 "texture": ExtResource("17_xciqe")
