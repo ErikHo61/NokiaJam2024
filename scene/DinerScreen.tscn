@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://016ob5bck0ku" path="res://assets/Sprites/FrontPerson.png" id="2_rlr4q"]
 [ext_resource type="Script" path="res://assets/Scripts/InputScript.gd" id="4_dt4a0"]
 [ext_resource type="PackedScene" uid="uid://dcoudhyv37usn" path="res://scene/OrderScreen.tscn" id="5_yuxce"]
-[ext_resource type="PackedScene" uid="uid://ddrjyk5ucwmot" path="res://scene/GameOver.tscn" id="6_jjhdt"]
+[ext_resource type="PackedScene" uid="uid://315yi6u4i8rj" path="res://scene/GameOver.tscn" id="6_jjhdt"]
 
 [node name="Diner" type="Node2D"]
 script = ExtResource("1_tyysg")
