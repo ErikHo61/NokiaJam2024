@@ -131,6 +131,9 @@ func game_over():
 	$GameOver.visible = true
 	$GameOver/ScoreVal.text = str(score)
 
+func restart():
+	get_tree().reload_current_scene()
+
 func connect_input():
 	input.input.connect(_on_input_received)
 
@@ -176,3 +179,6 @@ func _on_input_received(keycode):
 				CurMinigame.CurMinigameAttribute = CurMinigameHolder1
 				CurMinigame.activate_minigame()
 				select_minigame1()
+		_:
+			if($GameOver.visible):
+				restart()
