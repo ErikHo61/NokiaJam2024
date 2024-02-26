@@ -15,9 +15,9 @@ color = Color(0.980392, 0.980392, 0.980392, 1)
 
 [node name="TimerLabel" type="RichTextLabel" parent="."]
 offset_left = 24.0
-offset_top = 11.0
+offset_top = 16.0
 offset_right = 60.0
-offset_bottom = 17.0
+offset_bottom = 22.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("2_rvnd6")
 text = "Game Over"
@@ -26,9 +26,9 @@ autowrap_mode = 0
 
 [node name="ScoreLabel" type="RichTextLabel" parent="."]
 offset_left = 26.0
-offset_top = 17.0
+offset_top = 25.0
 offset_right = 50.0
-offset_bottom = 27.0
+offset_bottom = 35.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("2_rvnd6")
 text = "Score:"
@@ -37,34 +37,12 @@ autowrap_mode = 0
 
 [node name="ScoreVal" type="RichTextLabel" parent="."]
 offset_left = 50.0
-offset_top = 17.0
+offset_top = 25.0
 offset_right = 58.0
-offset_bottom = 27.0
+offset_bottom = 35.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("2_rvnd6")
 text = "99"
-fit_content = true
-autowrap_mode = 0
-
-[node name="RestartText" type="RichTextLabel" parent="."]
-offset_left = 28.0
-offset_top = 27.0
-offset_right = 68.0
-offset_bottom = 39.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("2_rvnd6")
-text = "Restart?"
-fit_content = true
-autowrap_mode = 0
-
-[node name="RestartText2" type="RichTextLabel" parent="."]
-offset_left = 23.0
-offset_top = 33.0
-offset_right = 63.0
-offset_bottom = 45.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("2_rvnd6")
-text = "Any Button"
 fit_content = true
 autowrap_mode = 0
 

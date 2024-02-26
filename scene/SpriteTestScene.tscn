@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cef4xt3n27h7d"]
+
+[ext_resource type="SpriteFrames" uid="uid://cqmhrrd462lk5" path="res://assets/GDResources/FoodSpriteFrames.tres" id="1_7p2r4"]
+
+[node name="SpriteTestScene" type="Node2D"]
+
+[node name="FoodSprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(15, 16)
+sprite_frames = ExtResource("1_7p2r4")
+animation = &"Cake"
