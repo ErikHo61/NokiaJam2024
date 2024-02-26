@@ -15,10 +15,7 @@ var blips = []
 signal ScoreReturn(score)
 
 func _ready():
-	blips.append(load("res://assets/sfx/blip1.wav"))
-	blips.append(load("res://assets/sfx/blip5.wav"))
-	blips.append(load("res://assets/sfx/blip7.wav"))
-	blips.append(load("res://assets/sfx/blip9.wav"))
+	load_sfx()
 	pass
 
 func _process(delta):
@@ -35,7 +32,7 @@ func _on_input_received(keycode):
 		return
 	if(has_node("BottomPanel/HBoxContainer"+keycode)):
 		add_ingredient(get_node("BottomPanel/HBoxContainer"+keycode+"/Input").text, keycode)
-		play_random_blip()
+		#play_random_blip()
 		return
 	match keycode:
 		"#":
@@ -44,6 +41,7 @@ func _on_input_received(keycode):
 func add_ingredient(input, keycode):
 	if(input != ""):
 		CurOrderFilled.append(get_node("BottomPanel/HBoxContainer"+keycode+"/Input").text)
+		
 
 func connect_input():
 	input.input.connect(_on_input_received)
@@ -67,8 +65,6 @@ func validation():
 				tempCurOrder.erase(CurOrderFilled[i])
 				tempScore += 1
 		tempScore -= tempCurOrder.size()
-		
-	
 	return tempScore
 
 #Make the order screen active and attach all labels
@@ -104,13 +100,22 @@ func play_result_sfx(score, targetScore):
 	if(audioplayer.is_playing()):
 		audioplayer.stop()	
 	if(score < targetScore):
-		
 		audioplayer.stream = load("res://assets/sfx/good2.wav")
 	else:
 		audioplayer.stream = load("res://assets/sfx/good1.wav")
 	audioplayer.play()
 		
+#func update_food():
+	#$Food.texture = icecream[1]
 
 func deactivate_minigame():
 	self.visible = false
 	emit_signal("ScoreReturn", validation())
+	
+func load_sfx():
+	blips.append(load("res://assets/sfx/blip1.wav"))
+	blips.append(load("res://assets/sfx/blip5.wav"))
+	blips.append(load("res://assets/sfx/blip7.wav"))
+	blips.append(load("res://assets/sfx/blip9.wav"))
+	
+	

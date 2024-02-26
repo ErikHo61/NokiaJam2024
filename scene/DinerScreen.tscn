@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://016ob5bck0ku" path="res://assets/Sprites/FrontPerson.png" id="2_rlr4q"]
 [ext_resource type="Script" path="res://assets/Scripts/InputScript.gd" id="4_dt4a0"]
 [ext_resource type="PackedScene" uid="uid://dcoudhyv37usn" path="res://scene/OrderScreen.tscn" id="5_yuxce"]
-[ext_resource type="AudioStream" uid="uid://bjunaw2rf13vf" path="res://assets/sfx/blip1.wav" id="6_hp8wo"]
+[ext_resource type="AudioStream" uid="uid://cabj73b6mwtms" path="res://assets/sfx/blip5.wav" id="6_2b3co"]
 
 [node name="Diner" type="Node2D"]
 script = ExtResource("1_tyysg")
@@ -175,7 +175,6 @@ offset_right = 85.0
 offset_bottom = 11.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("1_v7gsg")
-text = "+1"
 fit_content = true
 autowrap_mode = 0
 
@@ -191,6 +190,6 @@ script = ExtResource("4_dt4a0")
 visible = false
 
 [node name="AudioPlayer" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("6_hp8wo")
+stream = ExtResource("6_2b3co")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

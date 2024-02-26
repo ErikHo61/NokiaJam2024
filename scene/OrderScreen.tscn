@@ -1,8 +1,110 @@
-[gd_scene load_steps=4 format=3 uid="uid://dcoudhyv37usn"]
+[gd_scene load_steps=24 format=3 uid="uid://dcoudhyv37usn"]
 
 [ext_resource type="FontFile" uid="uid://cxeg4c7rwp2y3" path="res://assets/fonts/lowrez/lowrez.png" id="1_b1rls"]
 [ext_resource type="Script" path="res://assets/Scripts/Minigame.gd" id="1_cic5e"]
 [ext_resource type="Texture2D" uid="uid://cah2jl8dyfh5j" path="res://assets/Sprites/IceCream4.png" id="2_wkx0y"]
+[ext_resource type="Texture2D" uid="uid://ckxb3yqwapvrr" path="res://assets/Sprites/Cake1.png" id="4_7mcip"]
+[ext_resource type="Texture2D" uid="uid://uti2uynj5xqi" path="res://assets/Sprites/Cake2.png" id="5_7dr1h"]
+[ext_resource type="Texture2D" uid="uid://cmky8mh85kxw6" path="res://assets/Sprites/Cake3.png" id="6_tjds5"]
+[ext_resource type="Texture2D" uid="uid://4cclmqk7xk8r" path="res://assets/Sprites/Cake4.png" id="7_wx2or"]
+[ext_resource type="Texture2D" uid="uid://cbcyc0hhjcuhb" path="res://assets/Sprites/Cake5.png" id="8_7wyid"]
+[ext_resource type="Texture2D" uid="uid://1qcbp2tx2ukt" path="res://assets/Sprites/Cake6.png" id="9_3xef8"]
+[ext_resource type="Texture2D" uid="uid://cb6wm4a1obtir" path="res://assets/Sprites/FrozenFruit1.png" id="10_6m6fk"]
+[ext_resource type="Texture2D" uid="uid://bo2ph3irxkhc6" path="res://assets/Sprites/FrozenFruit2.png" id="11_k4jwu"]
+[ext_resource type="Texture2D" uid="uid://c2meprrngk386" path="res://assets/Sprites/FrozenFruit3.png" id="12_pnu6w"]
+[ext_resource type="Texture2D" uid="uid://sqeakqbfptee" path="res://assets/Sprites/FrozenFruit4.png" id="13_1cmiv"]
+[ext_resource type="Texture2D" uid="uid://dreht14bxr6lj" path="res://assets/Sprites/IceCream1.png" id="14_u3eks"]
+[ext_resource type="Texture2D" uid="uid://lckwytlr3xbm" path="res://assets/Sprites/IceCream2.png" id="15_nqugq"]
+[ext_resource type="Texture2D" uid="uid://bj28x8jfpwqat" path="res://assets/Sprites/IceCream3.png" id="16_7i7hl"]
+[ext_resource type="Texture2D" uid="uid://dti77c0wtyq4j" path="res://assets/Sprites/Popsicle1.png" id="17_xk2f1"]
+[ext_resource type="Texture2D" uid="uid://bebstkkcckaxd" path="res://assets/Sprites/Popsicle2.png" id="18_dh8pp"]
+[ext_resource type="Texture2D" uid="uid://dbyhh8dpti0ho" path="res://assets/Sprites/Popsicle3.png" id="19_2v8fr"]
+[ext_resource type="Texture2D" uid="uid://duscdec4h2sie" path="res://assets/Sprites/Popsicle4.png" id="20_88vy0"]
+[ext_resource type="Texture2D" uid="uid://bvdg1jtrns7t7" path="res://assets/Sprites/Popsicle5.png" id="21_4rtq4"]
+[ext_resource type="Texture2D" uid="uid://cq4265rkrjeu4" path="res://assets/Sprites/Popsicle6.png" id="22_4lo40"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kuylm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_7mcip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_7dr1h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_tjds5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_wx2or")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_7wyid")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_3xef8")
+}],
+"loop": false,
+"name": &"Cake",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_6m6fk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_k4jwu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_pnu6w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_1cmiv")
+}],
+"loop": false,
+"name": &"FrozenFruit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_u3eks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_nqugq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_7i7hl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wkx0y")
+}],
+"loop": false,
+"name": &"IceCream",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_xk2f1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_dh8pp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_2v8fr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_88vy0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_4rtq4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_4lo40")
+}],
+"loop": false,
+"name": &"Popsicle",
+"speed": 5.0
+}]
 
 [node name="OrderScreen" type="Node2D"]
 script = ExtResource("1_cic5e")
@@ -27,13 +129,33 @@ offset_top = 30.0
 offset_right = 84.0
 offset_bottom = 48.0
 
-[node name="HBoxContainer8" type="Control" parent="BottomPanel"]
+[node name="ColorRect2" type="ColorRect" parent="BottomPanel"]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 85.0
+color = Color(0.164706, 0.164706, 0.164706, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="BottomPanel"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = -30.0
+offset_right = 19.0
+color = Color(0.164706, 0.164706, 0.164706, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="BottomPanel"]
+layout_mode = 0
+offset_left = 49.0
+offset_top = -30.0
+offset_right = 50.0
+color = Color(0.164706, 0.164706, 0.164706, 1)
+
+[node name="HBoxContainer" type="Control" parent="BottomPanel"]
 anchors_preset = 0
 offset_left = 1.0
 offset_right = 49.0
 offset_bottom = 10.0
 
-[node name="Label" type="RichTextLabel" parent="BottomPanel/HBoxContainer8"]
+[node name="Input" type="RichTextLabel" parent="BottomPanel/HBoxContainer"]
 layout_mode = 2
 offset_right = 4.0
 offset_bottom = 10.0
@@ -43,35 +165,7 @@ text = "8"
 fit_content = true
 autowrap_mode = 0
 
-[node name="Input" type="RichTextLabel" parent="BottomPanel/HBoxContainer8"]
-layout_mode = 2
-offset_left = 7.0
-offset_right = 47.0
-offset_bottom = 10.0
-size_flags_horizontal = 3
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("1_b1rls")
-text = "Vanilla"
-fit_content = true
-
-[node name="HBoxContainer5" type="Control" parent="BottomPanel"]
-anchors_preset = 0
-offset_left = 1.0
-offset_top = 6.0
-offset_right = 49.0
-offset_bottom = 16.0
-
-[node name="Label" type="RichTextLabel" parent="BottomPanel/HBoxContainer5"]
-layout_mode = 2
-offset_right = 4.0
-offset_bottom = 10.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("1_b1rls")
-text = "5"
-fit_content = true
-autowrap_mode = 0
-
-[node name="Input" type="RichTextLabel" parent="BottomPanel/HBoxContainer5"]
+[node name="Name" type="RichTextLabel" parent="BottomPanel/HBoxContainer"]
 layout_mode = 2
 offset_left = 7.0
 offset_right = 47.0
@@ -85,21 +179,21 @@ fit_content = true
 [node name="HBoxContainer2" type="Control" parent="BottomPanel"]
 anchors_preset = 0
 offset_left = 1.0
-offset_top = 12.0
+offset_top = 6.0
 offset_right = 49.0
-offset_bottom = 22.0
+offset_bottom = 16.0
 
-[node name="Label" type="RichTextLabel" parent="BottomPanel/HBoxContainer2"]
+[node name="Input" type="RichTextLabel" parent="BottomPanel/HBoxContainer2"]
 layout_mode = 2
 offset_right = 4.0
 offset_bottom = 10.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("1_b1rls")
-text = "2"
+text = "5"
 fit_content = true
 autowrap_mode = 0
 
-[node name="Input" type="RichTextLabel" parent="BottomPanel/HBoxContainer2"]
+[node name="Name" type="RichTextLabel" parent="BottomPanel/HBoxContainer2"]
 layout_mode = 2
 offset_left = 7.0
 offset_right = 47.0
@@ -110,13 +204,41 @@ theme_override_fonts/normal_font = ExtResource("1_b1rls")
 text = "Vanilla"
 fit_content = true
 
-[node name="HBoxContainer9" type="Control" parent="BottomPanel"]
+[node name="HBoxContainer3" type="Control" parent="BottomPanel"]
+anchors_preset = 0
+offset_left = 1.0
+offset_top = 12.0
+offset_right = 49.0
+offset_bottom = 22.0
+
+[node name="Input" type="RichTextLabel" parent="BottomPanel/HBoxContainer3"]
+layout_mode = 2
+offset_right = 4.0
+offset_bottom = 10.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("1_b1rls")
+text = "2"
+fit_content = true
+autowrap_mode = 0
+
+[node name="Name" type="RichTextLabel" parent="BottomPanel/HBoxContainer3"]
+layout_mode = 2
+offset_left = 7.0
+offset_right = 47.0
+offset_bottom = 10.0
+size_flags_horizontal = 3
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("1_b1rls")
+text = "Vanilla"
+fit_content = true
+
+[node name="HBoxContainer4" type="Control" parent="BottomPanel"]
 anchors_preset = 0
 offset_left = 38.0
 offset_right = 86.0
 offset_bottom = 10.0
 
-[node name="Label" type="RichTextLabel" parent="BottomPanel/HBoxContainer9"]
+[node name="Input" type="RichTextLabel" parent="BottomPanel/HBoxContainer4"]
 layout_mode = 2
 offset_right = 4.0
 offset_bottom = 10.0
@@ -126,7 +248,35 @@ text = "9"
 fit_content = true
 autowrap_mode = 0
 
-[node name="Input" type="RichTextLabel" parent="BottomPanel/HBoxContainer9"]
+[node name="Name" type="RichTextLabel" parent="BottomPanel/HBoxContainer4"]
+layout_mode = 2
+offset_left = 7.0
+offset_right = 47.0
+offset_bottom = 10.0
+size_flags_horizontal = 3
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("1_b1rls")
+text = "Vanilla"
+fit_content = true
+
+[node name="HBoxContainer5" type="Control" parent="BottomPanel"]
+anchors_preset = 0
+offset_left = 38.0
+offset_top = 6.0
+offset_right = 86.0
+offset_bottom = 16.0
+
+[node name="Input" type="RichTextLabel" parent="BottomPanel/HBoxContainer5"]
+layout_mode = 2
+offset_right = 4.0
+offset_bottom = 10.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("1_b1rls")
+text = "6"
+fit_content = true
+autowrap_mode = 0
+
+[node name="Name" type="RichTextLabel" parent="BottomPanel/HBoxContainer5"]
 layout_mode = 2
 offset_left = 7.0
 offset_right = 47.0
@@ -140,39 +290,11 @@ fit_content = true
 [node name="HBoxContainer6" type="Control" parent="BottomPanel"]
 anchors_preset = 0
 offset_left = 38.0
-offset_top = 6.0
-offset_right = 86.0
-offset_bottom = 16.0
-
-[node name="Label" type="RichTextLabel" parent="BottomPanel/HBoxContainer6"]
-layout_mode = 2
-offset_right = 4.0
-offset_bottom = 10.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("1_b1rls")
-text = "6"
-fit_content = true
-autowrap_mode = 0
-
-[node name="Input" type="RichTextLabel" parent="BottomPanel/HBoxContainer6"]
-layout_mode = 2
-offset_left = 7.0
-offset_right = 47.0
-offset_bottom = 10.0
-size_flags_horizontal = 3
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("1_b1rls")
-text = "Vanilla"
-fit_content = true
-
-[node name="HBoxContainer3" type="Control" parent="BottomPanel"]
-anchors_preset = 0
-offset_left = 38.0
 offset_top = 12.0
 offset_right = 86.0
 offset_bottom = 22.0
 
-[node name="Label" type="RichTextLabel" parent="BottomPanel/HBoxContainer3"]
+[node name="Input" type="RichTextLabel" parent="BottomPanel/HBoxContainer6"]
 layout_mode = 2
 offset_right = 4.0
 offset_bottom = 10.0
@@ -183,7 +305,7 @@ text = "3
 fit_content = true
 autowrap_mode = 0
 
-[node name="Input" type="RichTextLabel" parent="BottomPanel/HBoxContainer3"]
+[node name="Name" type="RichTextLabel" parent="BottomPanel/HBoxContainer6"]
 layout_mode = 2
 offset_left = 7.0
 offset_right = 47.0
@@ -194,15 +316,41 @@ theme_override_fonts/normal_font = ExtResource("1_b1rls")
 text = "Vanilla"
 fit_content = true
 
-[node name="Food" type="Sprite2D" parent="."]
-position = Vector2(34, 14)
-texture = ExtResource("2_wkx0y")
+[node name="Pages" type="RichTextLabel" parent="BottomPanel"]
+visible = false
+layout_mode = 0
+offset_left = 7.0
+offset_top = 18.0
+offset_right = 35.0
+offset_bottom = 25.0
+theme_override_fonts/normal_font = ExtResource("1_b1rls")
+text = "***"
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_top = 8.0
-offset_right = 13.0
+[node name="Okbox" type="Control" parent="BottomPanel"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 69.0
+offset_top = -11.0
+offset_right = 109.0
+offset_bottom = 29.0
+
+[node name="Background" type="ColorRect" parent="BottomPanel/Okbox"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 22.0
+offset_right = 16.0
+offset_bottom = 29.0
+color = Color(0.00392157, 0.00392157, 0.00392157, 1)
+
+[node name="Ok" type="RichTextLabel" parent="BottomPanel/Okbox"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 23.0
+offset_right = 17.0
 offset_bottom = 30.0
-color = Color(0.164706, 0.164706, 0.164706, 1)
+theme_override_fonts/normal_font = ExtResource("1_b1rls")
+text = "#>"
+autowrap_mode = 0
 
 [node name="Orders" type="Control" parent="."]
 layout_mode = 3
@@ -210,6 +358,13 @@ anchors_preset = 0
 offset_top = 4.0
 offset_right = 16.0
 offset_bottom = 29.0
+
+[node name="ColorRect" type="ColorRect" parent="Orders"]
+layout_mode = 0
+offset_top = 4.0
+offset_right = 13.0
+offset_bottom = 26.0
+color = Color(0.164706, 0.164706, 0.164706, 1)
 
 [node name="HBoxContainer" type="Control" parent="Orders"]
 anchors_preset = 0
@@ -298,46 +453,7 @@ Vanilla
 Choco
 Berry"
 
-[node name="ColorRect2" type="ColorRect" parent="."]
-offset_top = 29.0
-offset_right = 85.0
-offset_bottom = 30.0
-color = Color(0.164706, 0.164706, 0.164706, 1)
-
-[node name="ColorRect3" type="ColorRect" parent="."]
-offset_left = 18.0
-offset_right = 19.0
-offset_bottom = 30.0
-color = Color(0.164706, 0.164706, 0.164706, 1)
-
-[node name="ColorRect4" type="ColorRect" parent="."]
-offset_left = 49.0
-offset_right = 50.0
-offset_bottom = 30.0
-color = Color(0.164706, 0.164706, 0.164706, 1)
-
-[node name="Okbox" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 69.0
-offset_top = 19.0
-offset_right = 109.0
-offset_bottom = 59.0
-
-[node name="Background" type="ColorRect" parent="Okbox"]
-layout_mode = 0
-offset_left = 5.0
-offset_top = 22.0
-offset_right = 16.0
-offset_bottom = 29.0
-color = Color(0.00392157, 0.00392157, 0.00392157, 1)
-
-[node name="Ok" type="RichTextLabel" parent="Okbox"]
-layout_mode = 0
-offset_left = 6.0
-offset_top = 23.0
-offset_right = 17.0
-offset_bottom = 30.0
-theme_override_fonts/normal_font = ExtResource("1_b1rls")
-text = "#>"
-autowrap_mode = 0
+[node name="FoodSprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(34, 14)
+sprite_frames = SubResource("SpriteFrames_kuylm")
+animation = &"Cake"
